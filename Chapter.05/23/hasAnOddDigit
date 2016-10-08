@@ -1,0 +1,10 @@
+public static boolean hasAnOddDigit(int n){
+    boolean result = false;
+	while(n != 0){
+		if(n % 2 == 1 || n % 2 == -1){
+        	result = true;
+        }
+        n /= 10;
+    }
+    return result;
+}
