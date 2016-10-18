@@ -1,0 +1,6 @@
+public void subtract(TimeSpan span){
+    this.minutes = this.hours * 60 + this.minutes -
+    span.getHours() * 60 - span.getMinutes();
+    this.hours = this.minutes / 60;
+    this.minutes = this.minutes % 60;
+}

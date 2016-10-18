@@ -1,0 +1,4 @@
+public void scale(int factor){
+    this.hours = this.hours * factor + this.minutes * factor / 60;
+    this.minutes = this.minutes * factor % 60;
+}
