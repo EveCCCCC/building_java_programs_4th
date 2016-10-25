@@ -1,0 +1,7 @@
+public double slope(Point other){
+    if(other.x == this.x){
+        throw new IllegalArgumentException();
+    } else {
+        return (double)(other.y - this.y)/(other.x - this.x);
+    }
+}

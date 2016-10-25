@@ -1,0 +1,7 @@
+public boolean isVertical(Point other){
+    if(other.x == this.x){
+        return true;
+    } else {
+        return false;
+    }
+}
