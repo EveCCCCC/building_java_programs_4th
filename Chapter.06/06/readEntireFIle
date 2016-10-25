@@ -1,0 +1,7 @@
+public String readEntireFile(Scanner input){
+    String text = "";
+        while(input.hasNext()){
+        text += input.nextLine() + "\n";
+        }
+    return text;
+}

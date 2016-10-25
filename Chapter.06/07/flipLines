@@ -1,0 +1,15 @@
+public void flipLines(Scanner input){
+    String text = "";
+    String line1;
+    String line2;
+    while(input.hasNextLine()){
+        line1 = input.nextLine();
+        if(input.hasNextLine()){
+            line2 = input.nextLine();
+            text += (line2 + "\n" + line1 + "\n");
+        } else {
+            text += line1;
+        }
+    }
+    System.out.print(text);
+}
