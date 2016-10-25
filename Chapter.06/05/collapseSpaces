@@ -1,0 +1,10 @@
+public static void collapseSpaces(Scanner input){
+    while(input.hasNextLine()){
+        String line = input.nextLine();
+        Scanner words = new Scanner(line);
+        while(words.hasNext()){
+            System.out.print(words.next() + " ");
+        }
+        System.out.println();
+    }
+}

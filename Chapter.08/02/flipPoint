@@ -1,0 +1,5 @@
+public void flip(){
+    int z = -1 * this.y;
+    this.y = -1 * this.x;
+    this.x = z;
+}
