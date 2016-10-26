@@ -1,0 +1,15 @@
+public boolean transactionFee(double amount){
+    int count = 1;
+    for(int i = count; i <= this.transactions; i++){
+        if(this.balance >= (i * amount)){
+            this.balance -= (i * amount);
+        } else {
+            this.balance = 0;
+        }
+    }
+    if(this.balance > 0){
+        return true;
+    } else {
+        return false;
+    }
+}

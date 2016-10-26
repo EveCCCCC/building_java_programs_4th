@@ -1,0 +1,13 @@
+public boolean isCollinear(Point p1, Point p2){
+    if(p2.x == p1.x && p2.x == this.x){
+        return true;
+    } else if(p2.x == this.x && this.x != p1.x || p2.x == p1.x && p1.x != this.x){
+        return false;
+    } else if(Math.floor(((p2.y - this.y)/(p2.x - this.x)) * 10000) ==
+       Math.floor(((p1.y - this.y)/(p1.x - this.x)) * 10000)
+      ){
+        return true;
+    } else {
+        return false;
+    }
+}

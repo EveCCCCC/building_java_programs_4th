@@ -1,0 +1,7 @@
+public String toString() {
+    if(this.balance >= 0.00){
+        return this.name + ", $" + String.format("%.2f", this.balance);
+    } else {
+        return this.name + ", -$" + String.format("%.2f", (-1) * this.balance);
+    }
+}
