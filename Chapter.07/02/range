@@ -1,0 +1,20 @@
+public static int range(int[] array){
+    int l = array.length;
+    int max;
+    int min;
+    if(l == 1){
+        return 1;
+    } else {
+        max = array[0];
+        min = array[0];
+        for(int i = 1; i < l; i++){
+            if(max < array[i]){
+                max = array[i];
+            } else if(min > array[i]){
+                min = array[i];
+            } else {
+            }
+        }
+        return (max + 1) - min;
+    }
+}

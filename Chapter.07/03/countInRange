@@ -1,0 +1,10 @@
+public int countInRange(int[] array, int min, int max){
+    int count = 0;
+    int l = array.length;
+    for(int i = 0; i < l; i++){
+        if(array[i] >= min && array[i] <= max){
+            count++;
+        }
+    }
+    return count;
+}

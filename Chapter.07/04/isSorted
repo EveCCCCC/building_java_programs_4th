@@ -1,0 +1,21 @@
+public static boolean isSorted(double[] array){
+    int l = array.length;
+    int count = 0;
+    boolean isNondecreasing = true;
+    if(l == 1){
+        return isNondecreasing;
+    } else {
+        for(int i = 1; i < l; i++){
+            if(array[i - 1] < array[i]){
+                
+            } else if(array[i - 1] > array[i]){
+                count++;
+            }
+        }
+    }
+    if(count == 0){
+        return true;
+    } else {
+        return false;
+    }
+}

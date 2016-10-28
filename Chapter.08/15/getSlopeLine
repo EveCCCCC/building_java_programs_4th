@@ -1,0 +1,8 @@
+public double getSlope(){
+    double slope;
+    if(this.p2.getX() - this.p1.getX() == 0){
+        throw new IllegalStateException();
+    } else {
+        return slope = ((double)this.p2.getY() - this.p1.getY()) / ((double)this.p2.getX() - this.p1.getX());
+    }
+}
