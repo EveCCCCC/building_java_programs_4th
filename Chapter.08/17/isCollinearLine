@@ -1,0 +1,15 @@
+public boolean isCollinear(Point p){
+    int x = p.getX();
+    int y = p.getY();
+    double slope1 = (double)(y - this.p1.getY())/(x - this.p1.getX());
+    double slope2 = (double)(y - this.p2.getY())/(x - this.p2.getX());
+    slope1 = ((double)(int)(slope1 * 10000))/100;
+    slope2 = ((double)(int)(slope2 * 10000))/100;
+    if(this.p1.getX() == x && this.p2.getX() == x){
+        return true;
+    } else if(slope1 == slope2){
+        return true;
+    } else {
+        return false;
+    }
+}
