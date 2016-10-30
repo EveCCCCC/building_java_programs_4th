@@ -1,0 +1,7 @@
+public int largerAbsVal(int a, int b){
+    if(Math.abs(a) >= Math.abs(b)){
+        return Math.abs(a);
+    } else {
+        return Math.abs(b);
+    }
+}
