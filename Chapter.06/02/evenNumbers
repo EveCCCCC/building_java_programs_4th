@@ -1,0 +1,17 @@
+public void evenNumbers(Scanner input){
+    int count = 0;
+    int sum = 0;
+    int even = 0;
+    double average;
+    int x;
+    while(input.hasNextInt()){
+        x = input.nextInt();
+        sum += x;
+        count++;
+        if(x % 2 == 0){
+            even++;
+        }
+    }
+    average = (double)even*100/count;
+    System.out.printf(count + " numbers, sum = " + sum + "\n" + even + " evens (%2.2f%%)", average);
+}

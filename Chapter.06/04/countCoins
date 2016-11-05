@@ -1,0 +1,19 @@
+public void countCoins(Scanner input){
+    double sum = 0;
+    String coin;
+    int number;
+    while(input.hasNext()){
+        number = input.nextInt();
+        coin = input.next().toLowerCase();
+        if(coin.equals("quarters")){
+            sum += (number * 0.25);
+        } else if(coin.equals("dimes")){
+            sum += (number * 0.10);
+        } else if(coin.equals("nickels")){
+            sum += (number * 0.05);
+        } else {
+            sum += (number * 0.01);
+        }
+    }
+    System.out.printf("Total money: $%.2f", sum);
+}

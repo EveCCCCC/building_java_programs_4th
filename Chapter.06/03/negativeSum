@@ -1,0 +1,17 @@
+public boolean negativeSum(Scanner input){
+    int sum = input.nextInt();
+    int count = 1;
+    int position = 1;
+    int tempSum = sum;
+    while(sum >= 0 && input.hasNextInt()){
+        sum += input.nextInt();
+        count++;
+    }
+    if(sum > 0){
+        System.out.print("no negative sum");
+        return false;
+    } else {
+        System.out.print(sum + " after " + count + " steps");
+        return true;
+    }
+}
