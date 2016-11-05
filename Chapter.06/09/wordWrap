@@ -1,0 +1,19 @@
+public void wordWrap(Scanner input){
+    String result = "";
+    while(input.hasNextLine()){
+        String line = input.nextLine();
+        int length = line.length();
+        boolean hasLength = true;
+        while(hasLength){
+            if(length <= 60){
+                hasLength = false;
+                result += line.substring(0, length) + "\n";
+            } else {
+                result += line.substring(0, 60) + "\n";
+                line = line.substring(60, length);
+                length = line.length();
+            }
+        }
+    }
+    System.out.print(result);
+}
