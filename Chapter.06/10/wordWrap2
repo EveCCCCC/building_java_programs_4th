@@ -1,0 +1,21 @@
+public static final int MAXIMUM = 60;
+public void wordWrap2(Scanner input, PrintStream output){
+
+    String result = "";
+    while(input.hasNextLine()){
+        String line = input.nextLine();
+        int length = line.length();
+        boolean hasLength = true;
+        while(hasLength){
+            if(length <= MAXIMUM){
+                hasLength = false;
+                result += line.substring(0, length) + "\n";
+            } else {
+                result += line.substring(0, MAXIMUM) + "\n";
+                line = line.substring(60, length);
+                length = line.length();
+            }
+        }
+    }
+    output.print(result);
+}
